@@ -328,7 +328,7 @@ form input{
   padding:0.6rem;
   width: 27rem;
   border: none;
-  background-color:rgba(136, 133, 133, 0.3);
+  background-color:rgba(253, 253, 253,0.61);
   color:white;
   border: none;
   outline:none;
@@ -338,8 +338,8 @@ form textarea{
   padding:0.6rem;
   width: 27rem;
   border: none;
-  background-color:rgba(136, 133, 133, 0.3);
-  color:white;
+  background-color:rgba(255, 255, 255, 0.61);
+  color:black;
   border: none;
   outline:none;
  }
