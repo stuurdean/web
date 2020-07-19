@@ -1,361 +1,170 @@
-body{
-
+html {
   margin: 0;
- font-family: 'Roboto';
-    
-}
+  padding: 0; }
 
-.burner{
- background-image: url(images/abt.jpg);
- background-attachment: fixed;
- background-size: cover;
-    height: 200px;
-    width: 100%;
-    opacity: 0.6;
-    padding-top: 100px;
-}
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  color: #0e0000;
+  width: 1366px;
+  top: 0;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-.container{
- width: 100%;
-
-
-
-
-}
-.summary{
-
-   width: 100%; 
-  
-   text-align: center;
-
-
-}
-
-.team{
-
-    width: 100%;
-    float: left;
-    background-color: #9fe3fa;
-    
-}
-
-.card{
-
- background-color: white;
-    float: left;
-    width: 23.5%;
-   margin-left:  1%;
-   
-}
-h2{
-    text-align: center;
-    color: white;
-}
-
-img{
-
-    height: 80%;
-    width: 80%;
-    margin: 5%;
-    border-radius: 50%;
-   
-}
-h1{
-
-    color:white;
-    font-size: 50px;
-    text-align: center;
-    
-}
-
-button{
-
-
-    margin: 2%;
-    font-size: 15px;
-    text-decoration: none;
-    
-    border: 2px solid #008cba;
-    background-color: white;
-    color:black;
-    text-align: center;
-    display: inline-block;
-
-    padding: 7px;
-    border-radius: 5px;
-}
-.fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 20px;
-    margin-left: 7px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-  .fb{
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-
-  }
-
-  /* Facebook */
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
- /* fa-instagram */
- .fa-instagram{
-
-    background: #d6404d;
-    color: white;
- }
- /*fa-linkedin*/
- .fa-linkedin{
-
-    color: white;
-    background: #253964;
- }
-
- .fa:hover {
-    opacity: 0.7;
-  }
-
-
-
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 15%;
-   
-    top: 5%;
-    width: 70%; 
-    height: 100%; 
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: 3% auto; 
-    margin-left: 3%;
-    float: left;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 90%; /* Could be more or less, depending on screen size */
-  }
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: red;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .modal-header{
-
-    width: 100%;
-    float: left;
-      
-  }
-
-  .profile{
-
-    width: 30%;
-    float: left;
-    
-  }
-
-
-  .Modal-name{
-
-    float: left;
-    width: 60%;
-    padding: 10px;
-  }
-
-  .modal-summary{
-   
-    width: 100%;
-    float: left;
-  }
-  .pic{
-
-    border-radius: 10px;
-  }
-.modal-media{
-
-    
-
-}
-.contact-us{
-    width: 50%;
-    margin: 1%;;
-    height:auto;
-    background-image: url(images/contact.jpg);
-    background-attachment: fixed;
- background-size: cover;
-    border-radius: 10px;
-}
-.input-fields .items{
-    width: 80%;
-    padding-bottom: 15px;
-}
-.input-fields .items .label{
-    display: block;
-    font-size: 1em;
-    color: black;
-    text-transform: capitalize;
-    padding-bottom: 5px;
-}
-.input-fields .items .input,
-.input-fields .items .text-area{
-    background: transparent;
-    border: 0;
-    border: 1px solid #ffecb3;
-    width: 100%;
-    padding: 8px 10px;
-    font-size: 1em;
-    color:black;
-    border-radius: 3px;
-}
-.button{
-    margin: 0 30px;
-    background:orangered;
-    color: black;
-    font-size: 1.25em;
-    padding: 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    letter-spacing: 2px;
-}
-.items #message{
-    height: 100px;
-    background-color: transparent;
-    border: 0;
-    padding: 8px 10px;
-    font-size: 1em;
-    color: black;
-    border-radius: 30%;
-}
-
-#contact-form .container{
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
-
-.form-sections{
-  margin-top: 5rem;
-  display: grid;
-  grid-gap: 5rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-
-.Form-left {
-
-  
-}
-
-
-.Form-right h1{
-  color: #fff;
-  padding: 0;
-  margin: 0;
-}
-
-#contact-form{
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(images/abt.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
- }
- 
-
- #contact-form .container{
-   width: 80%;
-   margin: auto;
-   overflow: hidden;
- }
- 
-
- .form-sections{
-   margin-top: 5rem;
-   display: grid;
-   grid-gap: 5rem;
-   grid-template-columns: repeat(2, 1fr);
- }
-
-
-
-
-
-
-form{
-  padding-top: 2rem;
-}
-
-form h5{
-  padding: 0;
-  margin: 0;
-  color: rgb(228, 218, 218);
-}
-form input{
-  padding:0.6rem;
-  width: 27rem;
-  border: none;
-  background-color:rgba(253, 253, 253,0.61);
-  color:white;
-  border: none;
-  outline:none;
-}
-
-form textarea{
-  padding:0.6rem;
-  width: 27rem;
-  border: none;
-  background-color:rgba(255, 255, 255, 0.61);
-  color:black;
-  border: none;
-  outline:none;
- }
-
- form button{
-  width: 9rem;
-  background: rgb(12, 168, 207);
-  padding: 5px;
-  outline: none;
-  border-color: transparent;
-  color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 2px;
+h2 {
+  padding-top: 30px;
+  color: #FFF;
   text-align: center;
-  margin-top: 0.9rem;
-  border-radius: 10px;
-  cursor: pointer;
-}
+  font-size: 40px; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #FFF;
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 10px 1px #27275a;
+          box-shadow: 0px 0px 10px 1px #27275a; }
+  header div {
+    margin-top: 15px;
+    margin-left: 100px; }
+    header div a {
+      text-decoration: none;
+      font-size: 24px;
+      color: #27275A;
+      font-weight: 900; }
+  header nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 67%;
+    margin-top: 20px;
+    top: 0; }
+    header nav ul {
+      font-weight: 700;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        display: inline-block;
+        margin-left: 40px; }
+        header nav ul li a {
+          display: inline-block;
+          text-decoration: none;
+          color: #27275A;
+          font-weight: 500; }
+
+h1 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 30px; }
+
+button {
+  width: 160px;
+  height: 50px;
+  padding: 15px 32px;
+  border-radius: 12px;
+  border: none;
+  font-size: 17px;
+  color: #FFF;
+  cursor: alias;
+  background-color: #27275A; }
+
+main .hero_section {
+  overflow: auto;
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px; }
+  main .hero_section .banner-text {
+    margin-top: 160px;
+    width: 669px;
+    height: 335px;
+    color: #2D3748;
+    text-align: left; }
+    main .hero_section .banner-text p {
+      margin-bottom: 30px;
+      text-align: justify;
+      color: #4A5568; }
+  main .hero_section .banner-image {
+    width: 652px;
+    height: 454px;
+    margin-left: 40px;
+    margin-top: 130px;
+    border-radius: none; }
+main .whyus {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  margin-left: 300px;
+  background-color: #27275A;
+  margin-bottom: 100px; }
+  main .whyus h2 {
+    color: #FFF; }
+main aside {
+  width: 300px; }
+  main aside .sponsor div p {
+    margin-left: 38px;
+    opacity: 50%;
+    color: #27275A;
+    font-size: 12px;
+    bottom: 0; }
+  main aside .sponsor div a img {
+    margin-left: 45px;
+    border-radius: 0;
+    max-width: 120px; }
+main .contact {
+  color: #2D3748;
+  margin-left: 30%;
+  text-align: center;
+  width: 588px;
+  height: 296px;
+  margin-bottom: 100px; }
+  main .contact article h2 {
+    color: #27275A;
+    font-size: 36px;
+    padding-top: 60px; }
+
+hr {
+  color: #27275A;
+  border: 2px solid;
+  -webkit-margin-before: 0;
+          margin-block-start: 0; }
+
+.social_icon_group {
+  margin: 15px 0;
+  margin-left: 900px; }
+
+footer {
+  color: #27275A;
+  margin-left: 0px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  footer .social_icon_group {
+    white-space: normal;
+    font-size: 900;
+    opacity: 80%;
+    margin-left: 600px; }
+    footer .social_icon_group .quicknav {
+      margin-left: 25px;
+      color: #27275A;
+      font-weight: 500;
+      opacity: 65%; }
+    footer .social_icon_group .copyright {
+      margin-top: 30px !important; }
+    footer .social_icon_group .copyright:disabled {
+      background-color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
