@@ -9,7 +9,10 @@
     <title>Group III - MLAB Team Portal</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -22,7 +25,7 @@
       <nav>
         <ul>
           <li>
-            <a href="Aboutus.html">About</a>
+            <a href="about.html">About</a>
           </li>
           <li>
             <a href="contact.html">Contact</a>
@@ -34,21 +37,20 @@
     
       <section class="hero_section">
         <article class="banner-text">
-            <h1>
-                Amet dolor quis magna dolor et nostrud sunt do.
+            <h1 style="color: #27275A; text-align: left;">
+              We create digital experiences that excite and inspire people.
             </h1>
               <p>
-                Cillum ullamco et labore adipisicing. Aute excepteur exercitation elit ipsum ullamco. Reprehenderit laboris amet consectetur magna ea magna mollit aliquip. 
-                Veniam duis irure mollit deserunt enim ex veniam consequat tempor id eu. Cupidatat laboris ut est commodo consectetur aliqua laborum eu. Id ipsum anim do aliqua labore veniam qui veniam ipsum.
+                We design exceptional sites that are built for performance and usability. We love to design sites that engage users and simplify their experience. When we deisgn, we do it well.
               </p>
               <button type="submit" >Learn More</button>
         </article>
         <article class="banner-image">
-          <img src="./images/bannerimage.PNG">
+          <img src="./images/bannerimage.PNG" style="border-radius: 0;"">
         </article>
       </section>
       <section class="whyus">
-        <h1>Why Choose Us</h1>
+        <h2>Why Choose Us</h2>
         <article>
             <section class="benefits-image">
                     
@@ -57,24 +59,39 @@
             </section>
         </article>          
       </section>
+      
       <section class="contact">
           <article>
-            <h1>
+            <h2>
               Do you want a web application?
-            </h1>
+            </h2>
             <p>
-              Cillum ullamco et labore adipisicing. Aute excepteur exercitation elit ipsum ullamco. Reprehenderit laboris amet consectetur magna ea magna mollit aliquip. 
-              Veniam duis irure mollit deserunt enim ex veniam consequat tempor id eu. Cupidatat laboris ut est commodo consectetur aliqua laborum eu. Id ipsum anim do aliqua labore veniam qui veniam ipsum.
+              Contact us with any questions you may have or discuss how we can help with your project.
             </p>
-            <button type="submit" >Contact Us</button> 
+            <button type="submit" onclick="location.href='contact.html'">Contact Us</button> 
       </article>
       </section>
+      <aside>
+        <section class="sponsor">
+            <div>
+              <p>Proudly sponsored by</p>
+              <a href="mlab.co.za" target="_blank"><img src="images/mlab-green-2.png" alt="MLAB  Logo"></a>
+            </div>
+        </section>
+    </aside>
   </main>
     <hr>
-  <footer>
-    <p> 
-      2020  &copy; Group III &dash; All Rights Reserved.</p>  
-  </footer>
+    <footer>
+      <a class="copyright" style="padding: 20px 0px 20px 100px;">2020 © Group III ‐ All Right Reserved.</a>
+        <div class="social_icon_group">
+          <a href="contact.html" class="quicknav">About</a>
+          <a href="contact.html" class="quicknav">Contact</a>
+          <a href="#" class="fa fa-facebook" style="margin-left: 30px;"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+            
+    </footer>
     <script src="" async defer></script>
   </body>
 </html>
