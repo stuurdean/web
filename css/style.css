@@ -110,7 +110,32 @@ main .whyus {
   background-color: #27275A;
   margin-bottom: 100px; }
   main .whyus h2 {
-    color: #FFF; }
+    color: #FFF;
+    margin-bottom: 0; }
+  main .whyus .reasons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    main .whyus .reasons .benefits-image {
+      margin-left: 30px !important; }
+      main .whyus .reasons .benefits-image article img {
+        width: 500px;
+        height: 500px;
+        margin: 0 800px 100px 0;
+        border-radius: 0; }
+    main .whyus .reasons .benefits {
+      max-width: 450px;
+      text-align: left;
+      color: #FFF;
+      margin-left: 80px;
+      margin-top: 60px; }
+      main .whyus .reasons .benefits h4 {
+        font-weight: 700;
+        font-size: 24px;
+        opacity: 95%; }
+      main .whyus .reasons .benefits p {
+        opacity: 65%;
+        font-size: 16px; }
 main aside {
   width: 300px; }
   main aside .sponsor div p {
