@@ -302,6 +302,8 @@ button{
   color: #fff;
   padding: 0;
   margin: 0;
+  margin-block-end: 0;
+  margin-block-start:0;
 }
 
 #contact-form{
