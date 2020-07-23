@@ -298,12 +298,13 @@ button{
 }
 
 
-.Form-right h1{
+.Form-right h2{
   color: #fff;
-  padding: 0;
+  padding: ;
   margin: 0;
   margin-block-end: 0;
   margin-block-start:0;
+  padding-top: 0px !important
 }
 
 #contact-form{
