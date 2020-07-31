@@ -48,7 +48,7 @@ body{
 }
 
 .card{
-
+  justify-content:center;
  background-color: white;
     float: left;
     width: 23.5%;
