@@ -11,7 +11,9 @@ body {
   top: 0;
   position: relative;
   overflow-x: hidden;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 h2 {
   padding-top: 30px;
@@ -20,6 +22,8 @@ h2 {
   font-size: 40px; }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 70px;
   top: 0;
@@ -27,7 +31,8 @@ header {
   width: 100%;
   background-color: #FFF;
   position: fixed;
-  box-shadow: 0px 0px 10px 1px #27275a; }
+  -webkit-box-shadow: 0px 0px 10px 1px #27275a;
+          box-shadow: 0px 0px 10px 1px #27275a; }
   header div {
     margin-top: 15px;
     margin-left: 100px; }
@@ -37,8 +42,10 @@ header {
       color: #27275A;
       font-weight: 900; }
   header nav {
-    flex: 1;
-    margin-left: 67%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 60%;
     margin-top: 20px;
     top: 0; }
     header nav ul {
@@ -53,9 +60,7 @@ header {
           display: inline-block;
           text-decoration: none;
           color: #27275A;
-          font-weight: 600; }
-        header nav ul li a:hover {
-          border-radius: 8px; }
+          font-weight: 700; }
 
 h1 {
   font-size: 36px;
@@ -77,6 +82,8 @@ button {
 main .hero_section {
   overflow: auto;
   margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px; }
   main .hero_section .banner-text {
@@ -97,16 +104,20 @@ main .hero_section {
     border-radius: none; }
 main .services {
   margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #27275A;
   width: 1920px; }
   main .services .article-services {
-    margin-left: 140px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+    margin-left: 180px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
     main .services .article-services .card {
       width: 330px;
       margin-left: 0;
-      box-shadow: none; }
+      -webkit-box-shadow: none;
+              box-shadow: none; }
       main .services .article-services .card .card-header {
         margin-left: 50px; }
         main .services .article-services .card .card-header img {
@@ -135,6 +146,8 @@ main .whyus {
     color: #FFF;
     margin-bottom: 0; }
   main .whyus .reasons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     main .whyus .reasons .benefits-image {
       margin-left: 30px !important; }
@@ -153,18 +166,26 @@ main .whyus {
         font-weight: 700;
         font-size: 24px;
         opacity: 95%;
-        margin-block-end: 0; }
+        -webkit-margin-after: 0;
+                margin-block-end: 0; }
       main .whyus .reasons .benefits p {
         opacity: 65%;
         font-size: 16px;
-        margin-block-start: 0;
-        margin-block-end: 0; }
+        -webkit-margin-before: 0;
+                margin-block-start: 0;
+        -webkit-margin-after: 0;
+                margin-block-end: 0; }
 main .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 200px; }
   main .stats .article-stats {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
     main .stats .article-stats div {
       margin-left: 100px;
       text-align: center;
@@ -178,7 +199,8 @@ main .stats {
       main .stats .article-stats div p {
         font-size: 38px;
         font-weight: 700;
-        margin-block-start: 0; }
+        -webkit-margin-before: 0;
+                margin-block-start: 0; }
         main .stats .article-stats div p span {
           text-transform: uppercase;
           font-weight: 200;
@@ -211,7 +233,8 @@ hr {
   color: #27275A;
   border: 2px solid;
   width: 1920px;
-  margin-block-start: 0; }
+  -webkit-margin-before: 0;
+          margin-block-start: 0; }
 
 .social_icon_group {
   margin: 15px 0;
@@ -221,6 +244,8 @@ footer {
   color: #27275A;
   margin-left: 0px;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   footer .social_icon_group {
     white-space: normal;

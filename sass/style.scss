@@ -50,7 +50,7 @@ header{
     }
     nav{
         flex: 1;
-        margin-left: 67%;
+        margin-left: 60%;
         margin-top: 20px;
         
         top:0;
@@ -66,11 +66,7 @@ header{
                   display: inline-block;
                   text-decoration: none;
                   color: #27275A;
-                  font-weight: 600;
-                }
-                a:hover{
-                    border-radius: 8px;
-
+                  font-weight: 700;
                 }
             }
         }
@@ -130,7 +126,7 @@ main{
         background-color: #27275A;
         width: 1920px;
         .article-services{
-            margin-left: 140px;
+            margin-left: 180px;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                 .card{
                     
