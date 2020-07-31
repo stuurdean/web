@@ -46,6 +46,9 @@ header{
             font-size: 24px;
             color: #27275A;
             font-weight: 900;
+            .logo-image{
+                border-radius: unset;
+            }
         }
     }
     nav{

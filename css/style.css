@@ -41,6 +41,8 @@ header {
       font-size: 24px;
       color: #27275A;
       font-weight: 900; }
+      header div a .logo-image {
+        border-radius: unset; }
   header nav {
     -webkit-box-flex: 1;
         -ms-flex: 1;
