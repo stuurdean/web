@@ -19,7 +19,8 @@ body{
  background-size: cover;
     height: 200px;
     width: 100%;
-    opacity: 0.6;
+    /*Changed the opacity from the 0.6 to unset*/ 
+    opacity: unset;
     padding-top: 100px;
 }
 .media-icons{
@@ -52,7 +53,10 @@ body{
  background-color: white;
     float: left;
     width: 23.5%;
+    /*Allow the height of the card to fit the content of the page*/
+    height: fit-content;
    margin: 25px 0;
+
    margin-left: 20px;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
@@ -383,4 +387,13 @@ form textarea{
 .form-left h2{
  margin-block-end:0;
  margin-block-start:0 important;
+}
+/*Suggestions as recommended by tyson*/
+.members{
+   display: flex;
+   justify-content: center;
+}
+html{
+  overflow-x: hidden;
+  
 }
