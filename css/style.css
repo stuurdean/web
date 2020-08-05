@@ -191,7 +191,7 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 25px; }
+    margin-left: 17%; }
     main .stats .article-stats {
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
