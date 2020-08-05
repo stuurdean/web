@@ -222,11 +222,6 @@ button{
 
     border-radius: 10px;
   }
-.modal-media{
-
-    
-
-}
 .contact-us{
     width: 50%;
     margin: 1%;;
@@ -295,16 +290,8 @@ button{
   grid-template-columns: repeat(2, 1fr);
 }
 
-
-.Form-left {
-
-  
-}
-
-
 .Form-right h2{
   color: #fff;
-  padding: ;
   margin: 0;
   margin-block-end: 0;
   margin-block-start:0;
