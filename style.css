@@ -402,7 +402,7 @@ nav{
 
 .team{
 
-  width: 30%;
+  width: 100%;
   text-align: center;
   margin: 1% auto;
   justify-content: center;
@@ -465,7 +465,7 @@ img{
 }
 
 #contact-form .container{
-  width: 30%;
+  width: 100%;
   margin: 1%;
 }
 
@@ -479,7 +479,7 @@ img{
 }
 .burner{
 
-  width: 30%;
+  width: 100%;
   margin: 1;
   justify-content: center;
 
