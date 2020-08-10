@@ -14,6 +14,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (max-width: 599px) {
+    body {
+      width: 100%; } }
+  @media (min-width: 900px) and (max-width: 1199px) {
+    body {
+      min-width: 900px; } }
 
 h2 {
   padding-top: 30px;
@@ -33,6 +39,18 @@ header {
   position: fixed;
   -webkit-box-shadow: 0px 0px 10px 1px #27275a;
           box-shadow: 0px 0px 10px 1px #27275a; }
+  @media (max-width: 599px) {
+    header {
+      width: 100%; }
+      header div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      header nav {
+        margin-left: 20% !important; } }
   header div {
     margin-top: -2px;
     margin-left: 100px; }
@@ -87,7 +105,18 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%; }
+  width: 1000px;
+  margin-left: 10%; }
+  @media (max-width: 599px) {
+    main {
+      width: 400px; } }
+  @media (min-width: 900px) and (max-width: 1199px) {
+    main {
+      max-width: 820px; } }
+  @media (min-width: 900px) and (max-width: 1199px) {
+    main {
+      margin: 0 15px;
+      width: 900px; } }
   main .hero_section {
     background-color: white;
     overflow: auto;
@@ -95,11 +124,31 @@ main {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 50px; }
+    @media (min-width: 900px) and (max-width: 1199px) {
+      main .hero_section .banner-image {
+        display: none; }
+      main .hero_section .banner-text {
+        margin-left: 15%; }
+        main .hero_section .banner-text p {
+          padding-right: 100px; } }
+    @media (max-width: 599px) {
+      main .hero_section {
+        width: 400px; }
+        main .hero_section .banner-text {
+          margin-top: 80px !important; }
+          main .hero_section .banner-text h1 {
+            text-align: center !important; }
+        main .hero_section .banner-image {
+          display: none; }
+        main .hero_section button {
+          margin-left: 30%; } }
     main .hero_section .banner-text {
-      margin-top: 160px;
+      margin-top: 100px;
       width: 100%;
       color: #2D3748;
       text-align: left; }
+      main .hero_section .banner-text h1 {
+        text-align: center; }
       main .hero_section .banner-text p {
         margin-bottom: 30px;
         text-align: justify;
@@ -108,7 +157,7 @@ main {
       width: 100%;
       height: auto;
       margin-left: 40px;
-      margin-top: 130px;
+      margin-top: 80px;
       border-radius: none; }
   main .services {
     margin-bottom: 100px;
@@ -120,6 +169,39 @@ main {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content; }
+    @media (min-width: 900px) and (max-width: 1199px) {
+      main .services {
+        width: 900px;
+        margin-left: aut; }
+        main .services .article-services {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          width: 900px; }
+          main .services .article-services #ux {
+            display: none; }
+          main .services .article-services .card {
+            width: 400px; } }
+    @media (max-width: 599px) {
+      main .services {
+        width: 599px;
+        display: block;
+        margin-left: 0 50px;
+        margin-top: auto; }
+        main .services .article-services {
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          display: block !important;
+          margin-top: 100px;
+          margin-left: 50px !important; }
+          main .services .article-services .card {
+            width: 80%; }
+            main .services .article-services .card .card-header {
+              margin-left: 70px; } }
     main .services .article-services {
       margin-left: 0px;
       -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -153,16 +235,50 @@ main {
     margin-left: 10px;
     padding-right: 15%;
     background-color: #27275A;
-    margin-bottom: 100px; }
+    margin-bottom: 50px; }
     main .whyus h2 {
       color: #FFF;
       margin-bottom: 0; }
+    @media (min-width: 900px) and (max-width: 1199px) {
+      main .whyus {
+        display: none; } }
+    @media (max-width: 599px) {
+      main .whyus {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        text-align: center;
+        display: block;
+        width: 599px;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 100px; }
+        main .whyus .reasons {
+          display: block;
+          padding: 0px !important;
+          margin-top: -30px; }
+          main .whyus .reasons .benefits-image {
+            margin: 0;
+            display: none; }
+          main .whyus .reasons .benefits {
+            margin-left: 0px !important; }
+            main .whyus .reasons .benefits div {
+              margin-bottom: 30px; }
+              main .whyus .reasons .benefits div h4 {
+                text-align: center; }
+              main .whyus .reasons .benefits div p {
+                text-align: justify;
+                padding: 0 35px; } }
     main .whyus .reasons {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      padding-left: 100px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
       main .whyus .reasons .benefits-image {
-        margin-left: 30px !important; }
+        margin-left: 30px; }
         main .whyus .reasons .benefits-image article img {
           width: 500px;
           height: 500px;
@@ -177,11 +293,11 @@ main {
         main .whyus .reasons .benefits h4 {
           font-weight: 700;
           font-size: 24px;
-          opacity: 95%;
+          color: rgba(255, 255, 255, 0.95);
           -webkit-margin-after: 0;
                   margin-block-end: 0; }
         main .whyus .reasons .benefits p {
-          opacity: 65%;
+          color: white;
           font-size: 16px;
           -webkit-margin-before: 0;
                   margin-block-start: 0;
@@ -191,7 +307,25 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 17%; }
+    margin-left: 10%; }
+    @media (min-width: 900px) and (max-width: 1199px) {
+      main .stats {
+        display: none; } }
+    @media (max-width: 599px) {
+      main .stats {
+        display: block !important;
+        width: 70%;
+        margin-left: 15%; }
+        main .stats .article-stats {
+          display: block !important;
+          margin: 0;
+          padding: 20px 0px; }
+          main .stats .article-stats div {
+            margin: 30px 0;
+            margin-left: 0 !important;
+            padding: 0;
+            text-align: center;
+            width: 100%; } }
     main .stats .article-stats {
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
@@ -200,7 +334,6 @@ main {
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
       main .stats .article-stats div {
         margin-left: 100px;
-        text-align: center;
         color: #27275A; }
         main .stats .article-stats div h5 {
           font-size: 24px;
@@ -212,30 +345,26 @@ main {
           font-size: 38px;
           font-weight: 700;
           -webkit-margin-before: 0;
-                  margin-block-start: 0; }
+                  margin-block-start: 0;
+          text-align: center; }
           main .stats .article-stats div p span {
             text-transform: uppercase;
             font-weight: 200;
             font-size: 18px; }
-  main aside {
-    width: 300px; }
-    main aside .sponsor div p {
-      margin-left: 38px;
-      opacity: 50%;
-      color: #27275A;
-      font-size: 12px;
-      bottom: 0; }
-    main aside .sponsor div a img {
-      margin-left: 45px;
-      border-radius: 0;
-      max-width: 120px; }
   main .contact {
     color: #2D3748;
-    margin-left: 30%;
+    margin-left: 20%;
     text-align: center;
     width: 588px;
     height: 296px;
     margin-bottom: 100px; }
+    @media (max-width: 599px) {
+      main .contact {
+        width: 100%;
+        margin-left: 0; }
+        main .contact article p {
+          text-align: justify;
+          padding: 0 20px; } }
     main .contact article h2 {
       color: #27275A;
       font-size: 36px;
@@ -252,6 +381,28 @@ hr {
   margin: 15px 0;
   margin-left: 900px; }
 
+aside {
+  width: 300px; }
+  @media (max-width: 599px) {
+    aside {
+      display: none; } }
+  aside .sponsor {
+    width: 300px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: black; }
+    aside .sponsor div p {
+      margin-left: 20px;
+      opacity: 50%;
+      color: #27275A;
+      bottom: 0; }
+    aside .sponsor div a img {
+      margin-left: 20px;
+      border-radius: 0;
+      width: 120px !important;
+      height: auto !important; }
+
 footer {
   color: #27275A;
   margin-left: 0px;
@@ -259,6 +410,22 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (min-width: 900px) and (max-width: 1199px) {
+    footer {
+      width: 900px; } }
+  @media (max-width: 599px) {
+    footer {
+      display: block; }
+      footer .social_icon_group {
+        margin-left: 0 !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        footer .social_icon_group .copyright {
+          padding-right: 20px 0px 20px !important; } }
   footer .social_icon_group {
     white-space: normal;
     font-size: 900;
@@ -270,7 +437,8 @@ footer {
       font-weight: 500;
       opacity: 65%; }
     footer .social_icon_group .copyright {
-      margin-top: 30px !important; }
+      margin-top: 30px;
+      padding: 20px 0px 20px 120px; }
     footer .social_icon_group .copyright:disabled {
       background-color: #ffffff; }
 
