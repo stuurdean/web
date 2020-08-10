@@ -42,13 +42,6 @@ header {
   @media (max-width: 599px) {
     header {
       width: 100%; }
-      header div {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
       header nav {
         margin-left: 20% !important; } }
   header div {
@@ -441,5 +434,4 @@ footer {
       padding: 20px 0px 20px 120px; }
     footer .social_icon_group .copyright:disabled {
       background-color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */
