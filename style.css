@@ -20,8 +20,7 @@ html {
 
 /* ============== beging of header====================*/
 #header_ {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    
     display: flex;
     height: 70px;
     top: 0;
