@@ -30,26 +30,50 @@
 </head>
 <body>
     
-    <header>
-        <div class="logo">
-            <a href="index.html"> 
-              <img class="logo-image" src="images/logo.png "/>
-            </a>
+  <header id="header_">
+
+    <div class="logo">
+     <a href="index.html">  <img src="Images/logo.png" alt=""></a> 
+
+     <nav id="links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+    </div>
+    
+    <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+    
+    </div>
+
+    <!--Navigation for mobile-->
+    <div class="mobileNav">
+
+        
+        <div onclick="myFunction()" class="nav_button">
+            <a href="javascript:void o"></a>
+            <div ></div>
+            <div ></div>
+            <div ></div>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>   
+
+
+
+    </div>
+
+    </header>
 <div class="burner">
   <h1>Get In touch</h1>
   <p>Contact us with any questions you may have or discuss how we can help with your project.</p>
@@ -90,20 +114,82 @@
 
       <hr>
       <footer>
-        <a class="copyright" style="padding: 20px 0px 20px 100px;">2020 © Group III ‐ All Right Reserved.</a>
-          <div class="social_icon_group">
-            <a href="about.html" class="quicknav">About</a>
-            <a href="contact.html" class="quicknav">Contact</a>
-            <a href="#" class="fa fa-facebook" style="margin-left: 30px;"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-          </div>
-              
-      </footer>
+
+
+        <div class="footer_display" >
+
+
+            <div class="sponsor">
+                <p>Proudly sponsored by</p>
+                <a href="mlab.co.za" target="_blank"><img src="images/mlab-green-2.png" alt="MLAB  Logo"></a>
+              </div>
+    
+         
+           <div class="social_icon_group">
+               <h4>Follow us on</h4>
+               <div class="icons">
+
+                <a href="#" class="fa fa-facebook" ></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+
+               </div>
+        
+           </div>
+
+
+           <div class="quicknav">
+
+
+            <a href="about.html" >About</a>
+            <a href="contact.html">Contact</a>
+
+           </div>
+
+
+        </div>
+
+        
+
+
+        <div class="copyright">
+            <a  >2020 © Futuristic ‐ All Right Reserved.</a>
+
+        </div>
+
+       
+           
+   </footer>
         <script src="" async defer></script>
 
 
 
    
 </body>
+
+<script>
+
+  function myFunction()
+  {
+  
+      var x = document.getElementById("links");
+      var y=document.getElementById("header_")
+      if(x.style.display==="block")
+      {
+          x.style.display="none";
+          y.style.height="70px";
+      }
+      else{
+  
+          x.style.display="block";
+          y.style.height="160px";
+          
+  
+      }
+  }
+  
+  </script>
+
+
+
 </html>

@@ -2,37 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/style.css">
-   
-
 </head>
 <body>
+    <header id="header_">
+
+    <div class="logo">
+     <a href="index.html">  <img src="Images/logo.png" alt=""></a> 
+
+     <nav id="links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+    </div>
     
-    <header>
-        <div class="logo">
-            <a href="index.html">
-              <img class="logo-image" src="images/logo.png "/>
-            </a>
+    <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+    
+    </div>
+
+    <!--Navigation for mobile-->
+    <div class="mobileNav">
+
+        
+        <div onclick="myFunction()" class="nav_button">
+            <a href="javascript:void o"></a>
+            <div ></div>
+            <div ></div>
+            <div ></div>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>   
+
+
+
+    </div>
+
+    </header>
+    
+
     <div class="container">
         <div class="team">
             <h2>Meet Our Team</h2>
@@ -40,51 +61,31 @@
               <p>We work together in coming up with innovative ideas,We're dedicated in building advanced websites.<br>
                   Grounded and solution-oriented Computer Scientist with a wide variety of professional experiences. <br>
                   Passionate about data security and educating the next generation of technology users and innovators</p>
-
             </div>
-            <!--Group the cards and set them to align at the center of the team div-->
+
+
             <div class="members">
-              <div class="card"> 
+                <div class="card"> 
 
-                <img src="images/kgotso.jpg" alt="">
-                <p  style="text-align: center; font-weight: 600;"> Kgotso Matotoka <br> <span style="color:grey; opacity:75%"> Team Leader</span></p>
-                <p class="p_card">She's an assertive lady,open-minded,career-oriented person,who is resourceful,hardworking and optimistic.</p>
-                <div class="media-icons">
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
 
-            <div class="card"> 
-
-                <img src="images/moshele.jpg" alt="">
-                <p  style="text-align: center; font-weight: 600;"> Moshele Seoka<br> <span style="color:grey; opacity:75%"> Developer</span> </p>
-                <p class="p_card">A certified java associate who is good in designing and prototyping UI/UX,web applications and optimizing to increase web traffic.</p>
-                <div class="media-icons">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
+                    <div class="card_image"> <img src="images/kgotso.jpg" alt=""></div>
+                  
+                  <p  style="text-align: center; font-weight: 600;"> Kgotso Matotoka <br> <span style="color:grey; opacity:75%"> Team Leader</span></p>
+                  <p class="p_card">She's an assertive lady,open-minded,career-oriented person,who is resourceful,hardworking and optimistic.</p>
+                  <div class="media-icons">
+                  <a href="#" ><i class="fa fa-twitter"></i></a>
                   <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-linkedin"></i></a> 
-                </div>
-            </div>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </div>
+              </div>
+
+
+              
+
 
             <div class="card"> 
 
-                <img src="images/stuur.jpg" alt="">
-                <p  style="text-align: center; font-weight: 600;">Stuurman Ramaila<br> <span style="color:grey; opacity:75%"> Developer</span> </p>
-                <p class="p_card">Specialize in HTML, CSS, JS, Java, C#,C++,Sql and firebase system analyst, system tester and project manager</p>
-                <div class="media-icons">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
-                
-                
-
-            </div>
-            <div class="card"> 
-
-                <img src="images/img.jpg" alt="">
+                <div class="card_image"> <img src="images/img.jpg" alt=""> </div>
                 
                 <p  style="text-align: center; font-weight: 600;">Makgothoma Precious<br> <span style="color:grey; opacity:75% "> Developer</span> </p>
                 <p class="p_card">She's a maltitasking queen who organises our meetings,she keeps everything on track and make sure we deliver our service.</p>
@@ -94,29 +95,132 @@
                 <a href="#"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
+
+           
+            <div class="card"> 
+
+                <div class="card_image">  <img src="images/stuur.jpg" alt=""> </div>
+                <p  style="text-align: center; font-weight: 600;">Stuurman Ramaila<br> <span style="color:grey; opacity:75%"> Developer</span> </p>
+                <p class="p_card">Specialize in HTML, CSS, JS, Java, C#,C++,Sql and firebase system analyst, system tester and project manager</p>
+                <div class="media-icons">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+                
+                
+
+            </div>
+            <div class="card"> 
+
+                <div class="card_image"> <img src="images/moshele.jpg" alt=""> </div>
+                <p  style="text-align: center; font-weight: 600;"> Moshele Seoka<br> <span style="color:grey; opacity:75%"> Developer</span> </p>
+                <p class="p_card">A certified java associate who is good in designing and prototyping UI/UX,web applications and optimizing to increase web traffic.</p>
+                <div class="media-icons">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a> 
+                </div>
+            </div>
+            
             
             </div>
 
 
+
+
+
+
+
+
+            </div>
+
         </div>
+
 
     </div>
 
+     
+    <hr>
+    <footer>
 
 
- 
-     <hr>
-     <footer>
-      <a class="copyright" style="padding: 20px 0px 20px 100px;">2020 © Group III ‐ All Right Reserved.</a>
-        <div class="social_icon_group">
-          <a href="about.html" class="quicknav">About</a>
-          <a href="contact.html" class="quicknav">Contact</a>
-          <a href="#" class="fa fa-facebook" style="margin-left: 30px;"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-linkedin"></a>
+        <div class="footer_display" >
+
+
+            <div class="sponsor">
+                <p>Proudly sponsored by</p>
+                <a href="mlab.co.za" target="_blank"><img src="images/mlab-green-2.png" alt="MLAB  Logo"></a>
+              </div>
+    
+         
+           <div class="social_icon_group">
+               <h4>Follow us on</h4>
+               <div class="icons">
+
+                <a href="#" class="fa fa-facebook" ></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+
+               </div>
+        
+           </div>
+
+
+           <div class="quicknav">
+
+
+            <a href="about.html" >About</a>
+            <a href="contact.html">Contact</a>
+
+           </div>
+
+
         </div>
-            
-    </footer>
-    <script src="" async defer></script>
+
+        
+
+
+        <div class="copyright">
+            <a  >2020 © Futuristic ‐ All Right Reserved.</a>
+
+        </div>
+
+       
+           
+   </footer>
+
+
+
+
+
+
+
+
+
 </body>
+
+<script>
+
+function myFunction()
+{
+
+    var x = document.getElementById("links");
+    var y=document.getElementById("header_")
+    if(x.style.display==="block")
+    {
+        x.style.display="none";
+        y.style.height="70px";
+    }
+    else{
+
+        x.style.display="block";
+        y.style.height="160px";
+        
+
+    }
+}
+
+</script>
 </html>
