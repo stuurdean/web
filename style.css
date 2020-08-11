@@ -5,7 +5,7 @@ html {
   
   body {
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+       font-family: 'Open Sans', sans-serif;
     color: #0e0000;
     
     top: 0;
@@ -53,7 +53,7 @@ html {
 
 .logo{
 
-    width: 80%;
+    width: 70%;
 }
 
 .logo img{
@@ -83,7 +83,7 @@ html {
 
     margin-top: 10px;
     width: 40px;
-    border: #27275a 1px solid;
+    
     border-radius: 5px;
 }
 
