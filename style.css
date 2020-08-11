@@ -20,7 +20,7 @@ html {
 
 /* ============== beging of header====================*/
 #header_ {
-    
+   
     display: flex;
     height: 70px;
     top: 0;
@@ -519,7 +519,8 @@ display: flex;
     
     #header_{
     
-       
+       display: -webkit-box;
+    display: -ms-flexbox;
     }
     
     header div {
