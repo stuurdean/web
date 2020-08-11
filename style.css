@@ -22,10 +22,9 @@ html {
     height: 70px;
     top: 0;
     overflow: hidden;
-    width: 100%;
+    width: 90%;
     background-color: #FFF;
     position: fixed;
-    -webkit-box-shadow: 0px 0px 10px 1px #27275a;
             box-shadow: 0px 0px 10px 1px #27275a;
      }
 
@@ -170,6 +169,7 @@ header div a {
         justify-content:center;
        background-color: white;
           width: 100%;
+           margin-bottom: 5px;
           /*Allow the height of the card to fit the content of the page*/
           height: fit-content;
          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
