@@ -54,13 +54,19 @@ header{
     box-shadow: 0px 0px 10px 1px transparentize($color: #27275A, $amount: 0);
     @include for-phone-only(){
         width: 100%;
-
         nav{
-            margin-left: 20% !important;
+            margin-left: 0 !important;
         }
     }
     @include for-tablet-landscape-up(){
-
+        width: 100%;
+        nav{
+            margin-left: 38% !important;
+            ul{
+                display: flex;
+                
+            }
+        }
     }
     div{
         margin-top: -2px;
@@ -120,7 +126,8 @@ button{
 }
 main{
     @include for-phone-only(){
-        width: 400px;
+        width: 100%;
+        margin-left: 0 !important;
     }
     @include for-tablet-landscape-up(){
         max-width: 820px;
@@ -147,12 +154,16 @@ main{
             }
         }
         @include for-phone-only(){
-            width: 400px;
+            width: 100%;
             .banner-text{
                 margin-top: 80px !important;
                h1{
                   text-align: center !important; 
 
+               }
+               p{
+                   margin: 0 25px;
+                   text-align: start;
                }
             }
             .banner-image{
@@ -195,7 +206,7 @@ main{
     .services{
         @include for-tablet-landscape-up(){
             width: 900px;
-            margin-left: aut;
+            margin-left: auto;
             .article-services{
                 display: flex;
                 justify-content: center;
@@ -210,19 +221,19 @@ main{
             }
         }
         @include for-phone-only(){
-            width: 599px;
+            width: 100%;
             // display: block;
-            margin-left: 0 50px;
             margin-top: auto;
             .article-services{
                 width: fit-content;
                 display: block !important;
-                margin-top: 100px ;
-                margin-left: 50px !important;
+                margin-top: 100px;
                 .card{
-                    width: 80% ;
+                    width: 100% !important; 
                     .card-header{
-                        margin-left: 70px;
+                        margin-left: 0 !important;
+                        display: flex;
+                        justify-content: center;
                     }
                 }
             }
@@ -284,12 +295,12 @@ main{
                    height: fit-content;
                    text-align: center;
                     display: block;
-                    width: 599px;
+                    width: 100%;
                     margin-left: 0;
                     padding-left: 0 ;
                     margin-top: 100px;
                     h2{
-                        margin-left: -200px;
+                       text-align: center;
                     }
                     .reasons{
                         display: block;
@@ -300,7 +311,8 @@ main{
                             display: none;
                         }
                        .benefits{
-                           margin-left: 0px !important;
+                        max-width: 100% !important;
+                          margin: 0 !important;
                            div{
                                h4{
                                    text-align: center;
@@ -417,6 +429,9 @@ main{
         @include for-phone-only(){
             width: 100%;
             margin-left: 0;
+            h2{
+                text-align: center;
+            }
             article{
                 p{
                     text-align: justify;
@@ -481,16 +496,28 @@ footer{
     display: flex;
     @include for-tablet-landscape-up(){
         width: 900px;
+        display: flex;
+        justify-content: center;
+        .social_icon_group{
+            margin-left: 17% !important;
+        }
     }
     @include for-phone-only(){
         display: block;
+        width: 100%;
         .social_icon_group{
             margin-left: 0 !important;
             display: flex;
             justify-content: center;
-            .copyright{
-                padding-right:20px 0px 20px !important;
+            .quicknav{
+                display: none;
             }
+        }
+        .copyright{
+            margin-top: 0 !important;
+            padding: 0 !important;
+            display: flex;
+            justify-content: center;
         }
     }
     .social_icon_group{
@@ -503,14 +530,14 @@ footer{
         color: #27275A;
         font-weight: 500;
         opacity: 65%;
-       }
-       .copyright{
-            margin-top: 30px;
-            padding: 20px 0px 20px 120px;
-       }
-       .copyright:disabled{
-        background-color: #ffffff;
-       }
+        }
 
     }
+    .copyright{
+        margin-top: 30px;
+        padding: 20px 0px 20px 120px;
+   }
+   .copyright:disabled{
+    background-color: #ffffff;
+   }
 }
