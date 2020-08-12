@@ -453,6 +453,9 @@ hr{
  border: 2px solid;
  width: 1920px;
  margin-block-start: 0;
+ @include for-phone-only(){
+     width: 100%;
+ }
 }
 .social_icon_group{
     margin: 15px 0;
@@ -506,9 +509,11 @@ footer{
         display: block;
         width: 100%;
         .social_icon_group{
-            margin-left: 0 !important;
-            display: flex;
-            justify-content: center;
+            margin-left: 23% !important;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            display: flex !important;
+            justify-content: center !important;
             .quicknav{
                 display: none;
             }
