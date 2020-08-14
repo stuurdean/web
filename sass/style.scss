@@ -58,12 +58,12 @@ header{
         left: 0;
         .logo{
             margin: 0 auto;
-            img{
-
-            }
+            margin-top: 5px;
+            margin-left: 20px;;
         }
         nav{
-            display: contents;
+            display: block !important;
+            margin-left: 0 !important;
         }
     }
     @include for-tablet-landscape-up(){
@@ -77,7 +77,7 @@ header{
         }
     }
     div{
-        margin-top: -2px;
+        margin-top: 5px;
         margin-left: 100px;
         a{
             text-decoration: none;
@@ -92,7 +92,6 @@ header{
     }
     nav{
         flex: 1;
-        margin-left: 58%;
         margin-top: 20px;
         
         top:0;
@@ -515,6 +514,8 @@ footer{
         justify-content: center;
         .social_icon_group{
             margin-left: 17% !important;
+            display: flex;
+            justify-content: space-between;
         }
     }
     @include for-phone-only(){
@@ -542,17 +543,19 @@ footer{
        font-size: 900;
         opacity: 80%;
          margin-left: 45%;
+         display: flex;
        .quicknav{
         margin-left: 25px;
         color: #27275A;
         font-weight: 500;
         opacity: 65%;
+        text-decoration: none;
+        margin-block-start: 15px;
         }
 
     }
     .copyright{
         margin-top: 30px;
-        padding: 20px 0px 20px 120px;
    }
    .copyright:disabled{
     background-color: #ffffff;
