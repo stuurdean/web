@@ -50,7 +50,7 @@ header {
         margin-left: 20px; }
       header nav {
         display: block !important;
-        margin-left: 0 !important; } }
+        margin-left: -20% !important; } }
   @media (min-width: 900px) and (max-width: 1199px) {
     header {
       width: 100%; }
@@ -497,5 +497,4 @@ footer {
     margin-top: 30px; }
   footer .copyright:disabled {
     background-color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */
