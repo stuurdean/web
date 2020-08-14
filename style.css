@@ -7,7 +7,7 @@ html {
     font-size: 14px;
        font-family: 'Open Sans', sans-serif;
     color: #0e0000;
-    
+    left:0;
     top: 0;
    
             justify-content: center; }
@@ -382,14 +382,15 @@ display: flex;
 
   margin-top: 25px;
   display: none;
+    width:33%;
 }
 
 .quicknav a {
-  margin-left: 25px;
+  margin-left: 5px;
   margin-top: 25px;
   text-decoration: none;
   color: #27275A;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 500;
   opacity: 65%; }
 
@@ -608,7 +609,7 @@ display: flex;
 
     .sponsor{
 
-      width: 50%;
+      width: 33%;
     }
 
     .quicknav{
@@ -630,14 +631,14 @@ display: flex;
 
     .social_icon_group {
 
-      width: 50%;
+      width: 33%;
     }
   
   
   
     .sponsor{
   
-      width: 30%;
+      width: 33%;
     }
 
 
