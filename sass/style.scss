@@ -224,6 +224,7 @@ main{
                 }
                 .card{
                     width: 400px;
+                    
                 }
 
             }
@@ -242,6 +243,9 @@ main{
                         margin-left: 0 !important;
                         display: flex;
                         justify-content: center;
+                    }
+                    .card-body{
+                        padding-bottom: 30px;
                     }
                 }
             }
