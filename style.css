@@ -279,7 +279,101 @@ header div a {
 
 /*================ End  of ABOUT US PAGE styling*==============*/     
 
-      
+
+#contact-form .container{
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+
+
+.form-sections{
+margin-top: 5rem !important;
+
+grid-gap: 5rem;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.Form-right h2{
+color: #fff;
+margin: 0;
+margin-block-end: 0;
+margin-block-start:0;
+padding-top: 0px !important
+}
+
+#contact-form{
+background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(images/abt.jpg);
+background-size: cover;
+background-position: center;
+padding-bottom: 1%;
+
+}
+
+
+#contact-form .container{
+ width: 80%;
+ margin: auto;
+ overflow: hidden;
+}
+
+
+.form-sections{
+ margin-top: 5rem;
+
+ grid-gap: 5rem;
+ grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+
+
+form h5{
+padding: 0;
+margin: 0;
+color: rgb(228, 218, 218);
+}
+form input{
+padding:0.6rem;
+width: 27rem;
+border: none;
+background-color:rgba(253, 253, 253,0.61);
+color:white;
+border: none;
+outline:none;
+}
+
+form textarea{
+padding:0.6rem;
+width: 27rem;
+border: none;
+background-color:rgba(255, 255, 255, 0.61);
+color:black;
+border: none;
+outline:none;
+}
+
+form button{
+width: 100%;
+background-color: #27275A;
+padding: 5px;
+outline: none;
+border-color: transparent;
+color: #fff;
+font-size: 15px;
+font-weight: bold;
+letter-spacing: 2px;
+text-align: center;
+margin-top: 0.9rem;
+cursor: pointer;
+}
+
+.form-left h2{
+margin-block-end:0;
+margin-block-start:0 important;
+}
      
 
 
