@@ -67,24 +67,7 @@ header {
         top: 15px; }
         header .icon a i {
           color: #27275A; } }
-  @media (max-width: 599px) {
-    header {
-      width: 100%;
-      left: 0; }
-      header .logo {
-        margin: 0 auto;
-        margin-top: 5px;
-        margin-left: 20px; }
-      header nav {
-        display: none; }
-      header .icon {
-        color: #27275A;
-        display: block;
-        position: absolute;
-        right: 5%;
-        top: 15px; }
-        header .icon a i {
-          color: #27275A; } }
+  
   @media (min-width: 900px) and (max-width: 1199px) {
     header {
       width: 100%; }
