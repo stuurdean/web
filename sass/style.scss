@@ -28,11 +28,16 @@ body{
     @include for-phone-only(){
         width: 100%;
     }
-
-    @include for-tablet-landscape-up(){
-        min-width: 900px;
+    @include for-tablet(){
+        min-width: 600px;
+        max-width: 899px;
+        width: 100%;
     }
-    
+    @include for-tablet-landscape-up(){
+        min-width: 1190px;
+        max-width: 900px;
+        width: 100%;
+    }
 } 
 
 h2{
@@ -53,17 +58,55 @@ header{
     background-color: #FFF;
     position: fixed;
     box-shadow: 0px 0px 10px 1px transparentize($color: #27275A, $amount: 0);
+    .icon{
+        display: none;
+    }
+    @include for-tablet(){
+        width: 100%;
+        left: 0;
+        .logo{
+            margin: 0 auto;
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+        nav{
+            display: none;
+        }
+        .icon{
+            color: #27275A;
+            display: block;
+            position: absolute;
+            right: 5%;
+            top: 15px;
+            a{
+                i{
+                    color: #27275A;
+                }
+            }
+        }
+    }
     @include for-phone-only(){
         width: 100%;
         left: 0;
         .logo{
             margin: 0 auto;
             margin-top: 5px;
-            margin-left: 20px;;
+            margin-left: 20px;
         }
         nav{
-            display: block !important;
-            margin-left: -20% !important;
+            display: none;
+        }
+        .icon{
+            color: #27275A;
+            display: block;
+            position: absolute;
+            right: 5%;
+            top: 15px;
+            a{
+                i{
+                    color: #27275A;
+                }
+            }
         }
     }
     @include for-tablet-landscape-up(){
@@ -135,6 +178,27 @@ main{
     @include for-phone-only(){
         width: 100%;
         margin-left: 0 !important;
+    }
+    @include for-tablet(){
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        .hero_section{
+            display: block !important;
+            .banner-text{
+                h1{
+                    text-align: center !important;
+                }
+                button{
+                    margin-left: 35%;
+                }
+            }
+            .banner-image{
+                width: 90%!important;
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
     @include for-tablet-landscape-up(){
         max-width: 820px;
@@ -226,6 +290,27 @@ main{
                     
                 }
 
+            }
+        }
+        @include for-tablet(){
+            width: 100%;
+            //display: block;
+            .article-services{
+                width: fit-content;
+                display: block !important;
+                margin-top: 100px;
+                .card{
+                    width: 70% !important;
+                    margin-left: 14% !important;
+                    .card-header{
+                        margin-left: 0 !important;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .card-body{
+                        padding-bottom: 30px;
+                    }
+                }
             }
         }
         @include for-phone-only(){
@@ -339,6 +424,41 @@ main{
                     }
 
                 }
+                @include for-tablet(){
+                        height: fit-content;
+                        text-align: center;
+                         display: block;
+                         width: 100%;
+                         margin-left: 0;
+                         padding-left: 0 ;
+                         margin-top: 100px;
+                         h2{
+                            text-align: center;
+                         }
+                         .reasons{
+                             display: block;
+                             padding: 0px !important;
+                             margin-top: -30px;
+                             .benefits-image{
+                                display: none;
+                             }
+                            .benefits{
+                             max-width: 100% !important;
+                               margin: 0 !important;
+                                div{
+                                    h4{
+                                        text-align: center;
+                                    }
+                                    p{
+                                        text-align: justify;
+                                        padding: 0 35px;
+                                 
+                                    }
+                                    margin-bottom: 30px;
+                                }
+                            }
+                         }
+                }
                 .reasons{
 
                   display: flex;
@@ -383,6 +503,23 @@ main{
         margin-left: 10%;
         @include for-tablet-landscape-up(){
             display: none;
+        }
+        @include for-tablet(){
+            display: block !important;
+            width: 70%;
+            margin-left: 15%;
+            .article-stats{
+                display: block !important;
+                margin: 0;
+                padding: 20px 0px;
+                div{
+                 margin: 30px 0;
+                 margin-left: 0 !important;
+                 padding: 0;
+                   text-align: center;
+                   width: 100%;
+                }
+            }
         }
         @include for-phone-only(){
             display: block !important;
@@ -450,6 +587,20 @@ main{
                 }
             }
         }
+        @include for-tablet(){
+            width: 100%;
+            margin-left: 0;
+            h2{
+                text-align: center;
+            }
+            article{
+                p{
+                    text-align: justify;
+                    padding: 0 100px;
+                }
+            }
+        }
+
         article{
             h2{
                 color: #27275A;
@@ -473,6 +624,9 @@ hr{
     margin-left: 900px;
   }
   aside{
+    @include for-tablet(){
+        display: none;
+    }
     @include for-phone-only(){
         display: none;
     }
@@ -536,6 +690,14 @@ footer{
             padding: 0 !important;
             display: flex;
             justify-content: center;
+        }
+    }
+    @include for-tablet(){
+        .copyright{
+            margin: -20px;
+        }
+        .social_icon_group{
+            margin-left: 0px !important;
         }
     }
     .social_icon_group{
