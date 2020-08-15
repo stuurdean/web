@@ -539,6 +539,11 @@ display: flex;
 .media-icons{
     padding-bottom: 20px;
 }
+@media( max-width: 899){
+  .media-icons{
+    padding-bottom: 30px !important;
+  }
+}
 .icons .fa {
   padding: 15px;
   font-size: 15px;
@@ -777,8 +782,25 @@ display:grid;
     }
     
 
-@media(max-width){
+@media(max-width: 899px){
+  a{
+    font-size: 16px;
+  }
   .media-icons{
     padding-bottom: 20px !important;
   }
+  header div{
+    margin-left: 0 !important;
+    margin-right: 5%;
+
+  }
+  header nav ul li{
+    display: block !important;
+    margin: 50px 0;
+    margin-left: 50% !important;
+  }
 }
+a{
+  font-size: 18px !important;
+}
+

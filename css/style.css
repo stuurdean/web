@@ -34,7 +34,21 @@ h2 {
   text-align: center;
   font-size: 40px; }
 
-
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #FFF;
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 10px 1px #27275a;
+          box-shadow: 0px 0px 10px 1px #27275a; }
+  header .icon {
+    display: none; }
   @media (min-width: 600px) and (max-width: 900px) {
     header {
       width: 100%;
@@ -53,7 +67,24 @@ h2 {
         top: 15px; }
         header .icon a i {
           color: #27275A; } }
-  
+  @media (max-width: 599px) {
+    header {
+      width: 100%;
+      left: 0; }
+      header .logo {
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-left: 20px !important; }
+      header nav {
+        display: none; }
+      header .icon {
+        color: #27275A;
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 15px; }
+        header .icon a i {
+          color: #27275A; } }
   @media (min-width: 900px) and (max-width: 1199px) {
     header {
       width: 100%; }
@@ -63,7 +94,36 @@ h2 {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; } }
-  
+  header div {
+    margin-top: 5px;
+    margin-left: 100px; }
+    header div a {
+      text-decoration: none;
+      font-size: 24px;
+      color: #27275A;
+      font-weight: 900; }
+      header div a .logo-image {
+        border-radius: unset;
+        width: 151px; }
+  header nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 20px;
+    top: 0; }
+    header nav ul {
+      font-weight: 700;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        display: inline-block;
+        margin-left: 40px; }
+        header nav ul li a {
+          display: inline-block;
+          text-decoration: none;
+          color: #27275A;
+          font-weight: 700; }
 
 h1 {
   font-size: 36px;
@@ -573,5 +633,4 @@ footer {
     margin-top: 30px; }
   footer .copyright:disabled {
     background-color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */
