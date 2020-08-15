@@ -105,7 +105,7 @@ html {
 /*Narbar designg*/
 header div {
     margin-top: 5px;
-    margin-left: 10px; }
+    margin-left: 0px !important; }
 
 /*Narbar link*/    
 header div a {
@@ -804,3 +804,8 @@ a{
   font-size: 18px !important;
 }
 
+@media(min-width:992px){
+  .navigation{
+     margin-left: 15% !important;
+  }
+}
