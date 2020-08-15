@@ -27,6 +27,7 @@ body{
     justify-content: center;
     @include for-phone-only(){
         width: 100%;
+        overflow-x: hidden;
     }
     @include for-tablet(){
         min-width: 600px;
@@ -88,6 +89,9 @@ header{
     @include for-phone-only(){
         width: 100%;
         left: 0;
+        header div{
+            margin-right: 15%;
+        }
         .logo{
             margin: 0 auto;
             margin-top: 5px;

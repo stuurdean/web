@@ -16,7 +16,8 @@ body {
           justify-content: center; }
   @media (max-width: 599px) {
     body {
-      width: 100%; } }
+      width: 100%;
+      overflow-x: hidden; } }
   @media (min-width: 600px) and (max-width: 900px) {
     body {
       min-width: 600px;
@@ -71,6 +72,8 @@ header {
     header {
       width: 100%;
       left: 0; }
+      header header div {
+        margin-right: 15%; }
       header .logo {
         margin: 0 auto;
         margin-top: 5px;
@@ -633,5 +636,4 @@ footer {
     margin-top: 30px; }
   footer .copyright:disabled {
     background-color: #ffffff; }
-
 /*# sourceMappingURL=style.css.map */
