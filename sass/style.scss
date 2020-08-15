@@ -89,6 +89,7 @@ header{
     @include for-phone-only(){
         width: 100%;
         left: 0;
+        position: fixed;
         header div{
             margin-right: 15%;
         }
