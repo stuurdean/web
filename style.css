@@ -791,7 +791,7 @@ display:grid;
   }
   header div{
     margin-left: 0 !important;
-    margin-right: 5%;
+    margin-right: 15%;
 
   }
   header nav ul li{
@@ -808,4 +808,8 @@ a{
   .navigation{
      margin-left: 15% !important;
   }
+}
+
+@media(max-width:599px){
+
 }
