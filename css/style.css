@@ -254,16 +254,17 @@ nav {
       display: none; } }
 
 footer {
-  background: rgba(199, 199, 103, 0.7);
+  background: #27275A;
   padding: 8px;
   display: flex;
   color: #eee;
   flex-direction: column;
   align-items: center; }
   footer .copyright {
-    border-top: 5px solid #27275A;
+    border-top: 5px solid #FFF;
     justify-content: center;
     width: 100%;
+    color: #FFF;
     display: flex; }
   footer .social-media-footer ul {
     display: flex;
@@ -275,5 +276,7 @@ footer {
   footer .social-media-footer a {
     color: #FFF;
     transition: 0.4s; }
-
+footer p{
+  color: #FFF;
+}
 /*# sourceMappingURL=style.css.map */
