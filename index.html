@@ -9,70 +9,56 @@
     <title>Futuristic - MLAB Team Portal</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/01bba00fa9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    
+    <!-- <link rel="stylesheet" href="style.css"> -->
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
- <header id="header_">
-
-    <div class="logo">
-     <a href="index.html">  <img src="images/logo.png" alt=""></a> 
-
-     <nav id="links">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        
-    </nav>
-
-    </div>
+    <div id="mobile-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </div> 
     
-    <div class="navigation">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-            </nav>
-    
+ <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"> 
+           <img src="images/logo.png" alt="Futuristic logo">
+          </a> 
+       </div>
+       <div id="menu-icon">
+        <i class="fas fa-bars"></i>
     </div>
-
-    <!--Navigation for mobile-->
-    <div class="mobileNav">
-
-        
-        <div onclick="myFunction()" class="nav_button">
-            <a href="javascript:void o"></a>
-            <div ></div>
-            <div ></div>
-            <div ></div>
-        </div>
-
-
-
-    </div>
-
+      <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+  </nav>
     </header>   
   <main>
     
       <section class="hero_section">
         <article class="banner-text">
-            <h1 style="color: #27275A; text-align: left;">
+            <h1>
               We create digital experiences that excite and inspire people.
             </h1>
               <p>
                 We design exceptional sites that are built for performance and usability. We love to design sites that engage users and simplify their experience. When we deisgn, we do it well.
               </p>
-              <button type="submit" ><a src="index.html">Learn More</a></button>
+             <div>
+              <a href="about.html" class="btn-more">
+                Learn More
+              </a>
+             </div>
         </article>
         <article class="banner-image">
           <img src="./images/bannerimage.PNG" style="border-radius: 0;"">
@@ -85,7 +71,7 @@
                                   <img src="images/website.svg" alt="">
                               </div>
                               <div class="card-body">
-                                    <h5>Web Development</h5>
+                                    <h3>Web Development</h3>
                                     <p>Results speak louder than words when it comes to business websites. We develop your website according to your personalized business requirements in the minimum possible time in a budget  manner.</p>
                               </div>
                          </div>
@@ -94,8 +80,8 @@
                               <img src="images/app.svg" alt="">
                           </div>
                           <div class="card-body">
-                                <h5>Hybrid Application</h5>
-                                <p> We create mobile apps that can be deployed or published on multiple platforms using a single codebase, instead of having to develop the app multiple times using the respective native technologies for each platform</p>
+                                <h3>Hybrid Application</h3>
+                                <p> We create mobile apps that can be deployed or published on multiple platforms using a single codebase, instead of having to develop the app multiple times using the respective native technologies for each platform.</p>
                           </div>
                      </div>
                      <div class=" card " id="ux">
@@ -103,7 +89,7 @@
                           <img src="images/ux.svg" alt="">
                       </div>
                       <div class="card-body" id="">
-                            <h5>User Experience</h5>
+                            <h3>User Experience</h3>
                             <p>We improve the quality of the user’s interaction with and perceptions of web and mobile applications, by having a deep understanding of users, what they need, what they value, and their abilities.</p>
                       </div>
                  </div>
@@ -143,22 +129,22 @@
       <section class="stats">
           <article class="article-stats">
                 <div class="">
-                    <h5>Projects</h5>
+                    <h3>Projects</h3>
                       <hr>
                       <p>1</p>
                 </div>
                 <div class="">
-                  <h5>Audits</h5>
+                  <h3>Audits</h3>
                     <hr>
                     <p>1</p>
               </div>
               <div class="">
-                <h5>Experience</h5>
+                <h3>Experience</h3>
                   <hr>
                   <p>1<br><span>years</span></p>
             </div>
-            <div class="" style="padding-right: 90px;">
-              <h5>Awards</h5>
+            <div class="">
+              <h3>Awards</h3>
                 <hr>
                 <p>0</p>
           </div>
@@ -170,9 +156,11 @@
               Do you want a web application?
             </h2>
             <p>
-              Contact us with any questions you may have or discuss how we can help with your project.
+              You can give us a call if you need a new web application or have an one which you need to be improve.
             </p>
-            <button type="submit" onclick="location.href='contact.html'">Contact Us</button> 
+            <a href="tel: +2780253515" class="btn-more">
+              Call Us
+            </a>
       </article>
       </section>
      
@@ -181,23 +169,54 @@
     <section class="sponsor">
         <div>
           <p>Proudly sponsored by</p>
-          <a href="mlab.co.za" target="_blank"><img src="images/mlab-green-2.png" width="200px" height="auto" alt="MLAB  Logo"></a>
+          <a href="https://www.mlab.co.za" target="_blank"><img src="images/mlab-green-2.png" height="auto" alt="MLAB  Logo"></a>
         </div>
     </section>
 </aside>
-    <hr>
     <footer>
-      <a class="copyright">2020 © Futuristic ‐ All Right Reserved.</a>
-        <div class="social_icon_group">
-          <a href="about.html" class="quicknav">About</a>
-          <a href="contact.html" class="quicknav">Contact</a>
-          <a href="#" class="fa fa-facebook" style="margin-left: 30px;"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-linkedin"></a>
+      <div class="social-media-footer">
+        <ul>
+            <li>
+                <a href="#">
+                  <i class="fab fa-facebook fa-3x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fab fa-github fa-3x"></i>
+                </a>
+            </li>
+        </ul>
+         <div class="footer-quick-links">
+          <ul>
+            <li>
+                <a href="index.html">
+                  Home
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                  About
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                  Contact
+                </a>
+            </li>
+        </ul>
+         </div>
+      </div>
+        <div class="copyright">
+          <p>2020 &copy; Futuristic ‐ All Right Reserved.</p> 
         </div>
-            
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script/main.js"></script>
   </body>
                               
                               
