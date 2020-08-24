@@ -141,7 +141,7 @@
               <div class="">
                 <h3>Experience</h3>
                   <hr>
-                  <p>1<br><span>years</span></p>
+                  <p>1<span>years</span></p>
             </div>
             <div class="">
               <h3>Awards</h3>
@@ -216,13 +216,20 @@
           <p>2020 &copy; Futuristic ‐ All Right Reserved.</p> 
         </div>
     </footer>
-    <script src="script/main.js"></script>
-  </body>
-                              
-                              
-  <script src="js/script.js">  
-  </script>                            
-                              
-                              
-                              
+    <script>
+      const menuIcon = document.getElementById('menu-icon');
+      const mobileNav = document.getElementById('mobile-navigation');
+
+      menuIcon.addEventListener('click',function(){
+      if(mobileNav.style.opacity == "1"){
+        mobileNav.style.opacity == "0";
+        mobileNav.style.pointerEvents == "none";
+        }
+      else{
+        mobileNav.style.opacity == "1";
+        mobileNav.style.pointerEvents == "auto";
+        }
+})
+    </script>
+  </body>                        
 </html>

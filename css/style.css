@@ -8,9 +8,12 @@ h1 {
   padding: 8px;
   margin: 0;
   font-size: 48px;
-  color: rgba(199, 199, 103, 0.7);
-  line-height: 1.0; }
-
+  color: rgba(199, 199, 103, 1);
+  line-height: 1.0; 
+}
+section{
+  margin-top:  50px;
+}
 h2 {
   text-align: center;
   padding: 4px 32px;
@@ -27,9 +30,9 @@ a {
   color: #27275A; }
 
 a:hover {
-  color: #27275a;
+  color:white;
   font-weight: 900;
-  background-color: #595927; }
+  background-color: rgba(199, 199, 103, 1); }
 
 .btn-more {
   padding: 12px;
@@ -204,16 +207,20 @@ nav {
       margin: 0 50px;
       text-align: center; }
       .stats .article-stats div hr {
-        color: #C7B967; }
+        color: #C7B967;
+        border: solid 2px;
+       }
       .stats .article-stats div p {
+        display: flex;
+        flex-direction: column;
         font-size: 36px;
         font-weight: 600;
         margin-block-start: 0;
         margin-block-end: 0; }
         .stats .article-stats div p span {
-          color: rgba(199, 199, 103, 0.7);
+          color: rgba(199, 199, 103, 1);
           font-weight: 100;
-          font-size: 14px;
+          font-size: 17px;
           text-transform: uppercase; }
   @media (max-width: 719px) {
     .stats {
@@ -228,7 +235,7 @@ nav {
   align-items: center; }
   .contact article h2 {
     font-size: 36px;
-    color: rgba(89, 89, 39, 0.7);
+    color: rgba(199, 199, 103, 1);
     margin-block-start: 0;
     margin-block-end: 0; }
   .contact article p {
@@ -261,7 +268,7 @@ footer {
   flex-direction: column;
   align-items: center; }
   footer .copyright {
-    border-top: 5px solid #FFF;
+    border-top: 5px solid rgba(199, 199, 103, 1);
     justify-content: center;
     width: 100%;
     color: #FFF;
@@ -269,7 +276,9 @@ footer {
   footer .social-media-footer ul {
     display: flex;
     flex-direction: row;
-    list-style: none; }
+    list-style: none;
+    padding: 0;
+  }
     footer .social-media-footer ul li {
       padding: 16px;
       transition: .4s; }

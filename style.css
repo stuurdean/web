@@ -278,7 +278,22 @@ header div a {
 
 
 /*================ End  of ABOUT US PAGE styling*==============*/     
-
+.burner{
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.burner h1{
+  font-size: 48px;
+  font-weight: 700;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.burner p{
+  margin: 0 32;
+}
 
 #contact-form .container{
 width: 80%;
