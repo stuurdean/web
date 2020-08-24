@@ -268,7 +268,7 @@ footer {
   flex-direction: column;
   align-items: center; }
   footer .copyright {
-    border-top: 5px solid rgba(199, 199, 103, 1);
+    border-top: 2px solid rgba(199, 199, 103, 1);
     justify-content: center;
     width: 100%;
     color: #FFF;
